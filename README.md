@@ -1,34 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 쿠팡 클론 프로젝트
 
-## Getting Started
+## 프로젝트 목표
+- 좋은 모듈을 설계하고 구현하는 방법을 익힌다.
+- 단단하고 유연한 컴포넌트를 설계하는 방법을 익힌다.
+- 컴포넌트와 API를 연결하고 React Suspense를 사용해 구현하는 방법을 익힌다.
+- CI/CD 툴을 이용해 코드의 지속적 통합과 실제 서비스로 배포하는 방법을 익힌다.
+- 적극적인 문서화와 애자일 방법론을 통해 SW 협업을 익힌다.
 
-First, run the development server:
+## 요구사항
+1. 로그인을 위해 필요한 Data Fetching 모듈을 설계한다.
+    - 인증/인가를 위한 mocking server를 구현한다.
+2. 쿠팡 서비스의 [로그인 페이지](https://login.coupang.com/login/login.pang)와 [회원가입 페이지](https://login.coupang.com/login/memberJoinFrm.pang)에 사용되는 컴포넌트를 구현한다.
+    - UI 테스트 및 문서화할 수 있는 스토리북을 구성한다.
+3. [쿠팡 상품 목록 페이지](https://www.coupang.com/np/categories/194284)를 구현한다.
+    - 상품 목록 페이지 리소스 요청에 필요한 API를 구현한다.
+    - API 비동기 처리에는 React Suspense를 이용한다.
+4. [쿠팡 장바구니 페이지](https://cart.coupang.com/cartView.pang)를 구현한다.
+    - 장바구니 페이지 리소스 요청에 필요한 API를 구현한다.
+5. 쿠팡 주문서 페이지를 구현한다.
+  
+## 스프린트 보드
+- [링크](https://near-earthworm-ccc.notion.site/Gom-Yang-287d0b3a552145f2b30ecebde73d3136)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## References
+- [넘블 쿠팡 프로젝트](https://www.numble.it/84b74183-c72e-4502-91c9-e41fbf0aa7aa)
