@@ -3,8 +3,21 @@
   "parserOptions": {
     "project": ["./tsconfig.json"]
   },
-  "plugins": ["simple-import-sort", "sort-destructure-keys", "sort-keys-fix"],
+  "env": {
+    "jest/globals": true
+  },
+  "plugins": [
+    "simple-import-sort",
+    "sort-destructure-keys",
+    "sort-keys-fix",
+    "jest",
+    "jest-formatting"
+  ],
   "extends": [
+    "plugin:jest/recommended",
+    "plugin:jest-formatting/recommended",
+    "plugin:jest/style",
+    "plugin:storybook/recommended",
     "eslint:recommended",
     "airbnb",
     "airbnb-typescript",
@@ -48,6 +61,7 @@
       { "selector": "typeLike", "format": ["StrictPascalCase"] }
     ],
     "sort-destructure-keys/sort-destructure-keys": "error",
-    "sort-keys-fix/sort-keys-fix": ["error", "asc", { "natural": true }]
+    "sort-keys-fix/sort-keys-fix": ["error", "asc", { "natural": true }],
+    "import/no-anonymous-default-export": "off"
   }
 }
