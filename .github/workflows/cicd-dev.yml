@@ -37,6 +37,11 @@ jobs:
           build-cache-path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
           build-lock-path: ${{ env.BUILD_LOCK_PATH }}
           build-commands: ${{ env.BUILD_COMMANDS }}
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.ORG_ID}}
+          vercel-project-id: ${{ secrets.PROJECT_ID}}
+          scope: ${{ secrets.ORG_ID }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Send results to Slack
         uses: ./.github/actions/slack-notification
