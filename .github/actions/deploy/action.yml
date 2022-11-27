@@ -48,11 +48,11 @@ runs:
       run: ${{ inputs.build-commands }}
 
     - name: Upload build output to Vercel Cloud
-      uses: amondnet/vercel-action@v25
+      uses: amondnet/vercel-action@v25.1.0
       with:
-        vercel-token: ${{ inputs.VERCEL_TOKEN }}
-        vercel-org-id: ${{ inputs.ORG_ID}}
-        vercel-project-id: ${{ inputs.PROJECT_ID}}
-        scope: ${{ inputs.ORG_ID }}
+        vercel-token: ${{ inputs.vercel-token }}
+        vercel-org-id: ${{ inputs.vercel-org-id }}
+        vercel-project-id: ${{ inputs.vercel-project-id }}
+        scope: ${{ inputs.vercel-org-id }}
         github-comment: true
-        github-token: ${{ inputs.GITHUB_TOKEN }}
+        github-token: ${{ inputs.github-token }}
