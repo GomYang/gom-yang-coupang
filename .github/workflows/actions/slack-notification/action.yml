@@ -1,0 +1,21 @@
+name: slack-notification
+description: Slack Notification
+inputs:
+  status:
+    description: ci-cd success/failure status
+    required: false
+    default: failure
+  slack-webhook-url:
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - name: Send results to Slack
+      uses: 8398a7/action-slack@v3
+      env:
+        SLACK_WEBHOOK_URL: ${{ inputs.slack-webhook-url }}
+      with:
+        status: ${{ inputs.status }}
+        fields: repo,message,commit,author,action,eventName,ref,workflow,job,took,pullRequest
+        author_name: ${{ github.actor }}
