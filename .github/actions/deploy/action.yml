@@ -20,6 +20,16 @@ inputs:
   build-commands:
     description: Build commands
     required: true
+  vercel-token:
+    required: true
+  vercel-org-id:
+    required: true
+  vercel-project-id:
+    description: project ID
+  scope:
+    description: If you are working in a team scope, you should set this value to your team ID
+  github-token:
+    description: if you want to comment on pull request or commit
 
 runs:
   using: composite
@@ -40,9 +50,9 @@ runs:
     - name: Upload build output to Vercel Cloud
       uses: amondnet/vercel-action@v25
       with:
-        vercel-token: ${{ secrets.VERCEL_TOKEN }}
-        vercel-org-id: ${{ secrets.ORG_ID}}
-        vercel-project-id: ${{ secrets.PROJECT_ID}}
-        scope: ${{ secrets.ORG_ID }}
+        vercel-token: ${{ inputs.VERCEL_TOKEN }}
+        vercel-org-id: ${{ inputs.ORG_ID}}
+        vercel-project-id: ${{ inputs.PROJECT_ID}}
+        scope: ${{ inputs.ORG_ID }}
         github-comment: true
-        github-token: ${{ secrets.GITHUB_TOKEN }}
+        github-token: ${{ inputs.GITHUB_TOKEN }}
