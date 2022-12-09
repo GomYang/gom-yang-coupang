@@ -5,11 +5,11 @@ import { gray, blue, red, green, amber, blackA } from '@radix-ui/colors'
 import { createStitches } from '@stitches/react'
 
 export const { createTheme, styled, theme } = createStitches({
+  media: {
+    tablette: '(min-width: 768px)',
+    desktop: '(min-width: 1024px)',
+  },
   theme: {
-    media: {
-      tablette: '(min-width: 768px)',
-      desktop: '(min-width: 1024px)',
-    },
     fontSizes: {
       default: '$md',
       xs: '12px',
