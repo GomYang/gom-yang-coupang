@@ -1,6 +1,6 @@
 import type { AppProps } from 'next/app'
 
-import { GlobalCss } from "@/styles/stitches.config";
+import { GlobalCss } from '@/styles'
 
 export default function App({ Component, pageProps }: AppProps) {
   GlobalCss()
