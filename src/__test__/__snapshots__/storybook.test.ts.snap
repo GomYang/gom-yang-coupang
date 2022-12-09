@@ -1,116 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Pages/Home Home Page 1`] = `
-<div
-  className="container"
->
+<div>
   <main
-    className="main"
+    style={
+      {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "15px",
+        "height": "100vh",
+        "justifyContent": "center",
+        "width": "100vw",
+      }
+    }
   >
-    <h1
-      className="title"
-    >
-      Welcome to 
-      <a
-        href="https://nextjs.org"
-      >
-        Next.js!
-      </a>
-    </h1>
-    <p
-      className="description"
-    >
-      Get started by editing
-       
-      <code
-        className="code"
-      >
-        pages/index.tsx
-      </code>
-    </p>
-    <div
-      className="grid"
-    >
-      <a
-        className="card"
-        href="https://nextjs.org/docs"
-      >
-        <h2>
-          Documentation →
-        </h2>
-        <p>
-          Find in-depth information about Next.js features and API.
-        </p>
-      </a>
-      <a
-        className="card"
-        href="https://nextjs.org/learn"
-      >
-        <h2>
-          Learn →
-        </h2>
-        <p>
-          Learn about Next.js in an interactive course with quizzes!
-        </p>
-      </a>
-      <a
-        className="card"
-        href="https://github.com/vercel/next.js/tree/canary/examples"
-      >
-        <h2>
-          Examples →
-        </h2>
-        <p>
-          Discover and deploy boilerplate example Next.js projects.
-        </p>
-      </a>
-      <a
-        className="card"
-        href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        <h2>
-          Deploy →
-        </h2>
-        <p>
-          Instantly deploy your Next.js site to a public URL with Vercel.
-        </p>
-      </a>
+    <div>
+      🐻 Welcome to Gomyang Coupang Home 🐑
     </div>
-  </main>
-  <footer
-    className="footer"
-  >
-    <a
-      href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-      rel="noopener noreferrer"
-      target="_blank"
+    <button
+      className="c-iABXYT c-iABXYT-hKjBN-designType-alert c-iABXYT-eHtcQP-designType-primary"
     >
-      Powered by
-       
-      <span
-        className="logo"
-      >
-        <img
-          alt="Vercel Logo"
-          data-nimg="1"
-          decoding="async"
-          height={16}
-          loading="lazy"
-          onError={[Function]}
-          onLoad={[Function]}
-          src="/vercel.svg"
-          srcSet="/vercel.svg 1x, /vercel.svg 2x"
-          style={
-            {
-              "color": "transparent",
-            }
-          }
-          width={72}
-        />
-      </span>
-    </a>
-  </footer>
+      Enjoy Coding
+    </button>
+  </main>
 </div>
 `;
