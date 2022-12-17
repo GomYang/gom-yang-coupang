@@ -1,8 +1,15 @@
 import type { AppProps } from 'next/app'
 
+import ErrorBoundary from '@/components/ErrorBoundary'
 import { GlobalCss } from '@/styles'
 
-export default function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   GlobalCss()
-  return <Component {...pageProps} />
+  return (
+    <ErrorBoundary>
+      <Component {...pageProps} />
+    </ErrorBoundary>
+  )
 }
+
+export default App
