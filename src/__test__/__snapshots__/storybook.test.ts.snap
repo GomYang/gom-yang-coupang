@@ -19,7 +19,7 @@ exports[`Storyshots Pages/Home Home Page 1`] = `
       🐻 Welcome to Gomyang Coupang Home 🐑
     </div>
     <button
-      className="c-iABXYT c-iABXYT-hKjBN-designType-alert c-iABXYT-eHtcQP-designType-primary"
+      className="c-ipAzwD c-ipAzwD-cJbXIB-designType-alert c-ipAzwD-kvRgfT-designType-primary"
     >
       Enjoy Coding
     </button>
